@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+.filter-category{
+    border: 1px solid gray;
+    margin-top: 20px;
+    padding: 5px 10px 10px 15px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filter-category label {
+    vertical-align: middle;
+    margin-left: 5px;
+    margin-bottom:0 ;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.filter-category input {
+    height: 16px;
+    width: 16px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.selected-filters ul {
+    padding: 0;
+}
+.selected-filters li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: top;
+    padding: 5px 10px;
+    background-color: gray;
+    color: #fff;
+    border-radius: 5px;
+    margin-right: 10px; 
+}
+.selected-filters li .btn {
+    color: #fff;
+    margin-top: -5px;
+}
+.selected-filters li .btn:hover{
+    text-decoration: none;
+}
+.character{
+    background: #333;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    color: #fff;
+}
+.character h3 {
+    font-weight: normal;
+    font-size: 1.2rem;
+    margin: 0;
   }
+
+.character img{
+    max-width: 100%;
+}
+.character > div{
+    position: relative;
+}
+.character .name {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:rgba(0,0,0,.5);
+    padding: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.character .name span{
+    font-size: .7rem;
 }
 
-.App-link {
-  color: #61dafb;
+.character .info {
+    font-size:.7rem;
+    border-bottom: 1px solid #555;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    margin: 0 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.character .info span.value {
+    color: orange;
+    text-align: right;
 }
